@@ -1,0 +1,22 @@
+<div class="graph">
+  <canvas #donutChart></canvas>
+  <div class="center-content"
+       [style.max-width]="getCenterContentMaxWidth()">
+    <ng-template ngDonutCenterContent></ng-template>
+  </div>
+</div>
+<div class="color-legend">
+  <div *ngFor="let data of options.dataSet"
+        class="label">
+        <span class="square"
+              *ngIf="data.legendText"
+              [style.background-color]="data.color"
+              [style.width]="options.legendSquareSize"
+              [style.height]="options.legendSquareSize"></span>&nbsp;
+    <span class="text"
+          *ngIf="data.legendText"
+          [style.font-size]="options.legendFontSize"
+          [style.color]="options.legendFontColor">{{data.legendText}}</span>&nbsp;&nbsp;&nbsp;
+  </div>
+</div>
+

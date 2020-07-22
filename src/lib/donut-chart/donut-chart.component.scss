@@ -1,0 +1,51 @@
+.graph {
+  position: relative;
+}
+
+.center-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+}
+
+.color-legend {
+
+  display: flex;
+  place-content: stretch center;
+
+  .label {
+    display: flex;
+    align-items: center;
+  }
+
+  .square {
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    border-radius: 2px;
+    background-color: #9AA1A9;
+  }
+
+  .text {
+    font-size: 13px;
+    font-weight: 300;
+    color: #9AA1A9;
+  }
+
+}
+
+
+.circle {
+  width: 16em;
+  height: 16em;
+  border-radius: 50%;
+  background: linear-gradient(36deg, #272b66 42.34%, transparent 42.34%) 0 0;
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+}
